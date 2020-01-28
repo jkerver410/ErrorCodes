@@ -1,0 +1,12 @@
+//Don't use Object.equals() method to compare two arrays
+//https://wiki.sei.cmu.edu/confluence/display/java/EXP02-J.+Do+not+use+the+Object.equals%28%29+method+to+compare+two+arrays
+public void CompareArrays()
+{
+	int a = (int)Math.random() * 10;
+	int b = (int)Math.random() * 10;
+
+	int[] ArrayA = new int[a];
+	int[] ArrayB = new int[b];
+
+	System.out.print(ArrayA.equals(ArrayB));
+}

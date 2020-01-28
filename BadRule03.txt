@@ -1,0 +1,11 @@
+//Be careful that you do not invoke integer overflow
+//https://wiki.sei.cmu.edu/confluence/display/java/NUM00-J.+Detect+or+prevent+integer+overflow
+public void SmallMultiply()
+{
+	byte A = (byte)Math.random() * 15;
+	byte B = (byte)Math.random() * 15;
+
+	byte C = A*B;
+
+	System.out.println(C);
+}
