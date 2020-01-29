@@ -5,7 +5,7 @@ public void SmallMultiply()
 	byte A = (byte)Math.random() * 15;
 	byte B = (byte)Math.random() * 15;
 
-	byte C = A*B;
+	byte C = (byte)Math.multiplyExact(A, B);
 
 	System.out.println(C);
 }

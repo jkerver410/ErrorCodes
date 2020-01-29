@@ -4,7 +4,12 @@
 public void createAndReadFile()
 {
 	File file = new File("RandomNumber.txt");
-	file.write(Math.random()*100);
+	//the original code didn't use a filewriter, so I made one
+	FileWriter writer = new FileWriter(file);
+	
+	writer.write(Math.random()*100);
+	
+	writer.close();
 	
 	file.delete();
 }

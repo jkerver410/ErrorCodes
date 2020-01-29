@@ -8,5 +8,5 @@ public void CompareArrays()
 	int[] ArrayA = new int[a];
 	int[] ArrayB = new int[b];
 
-	System.out.print(ArrayA.equals(ArrayB));
+	System.out.print(Arrays.equals(ArrayA, ArrayB));
 }
